@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/rk4027-N/my-java-app.git'
+               branch 'main' git 'https://github.com/rk4027-N/my-java-app.git'
             }
         }
 
