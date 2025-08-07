@@ -2,10 +2,10 @@ pipeline {
     agent any
     stages {
         stage('Clone') {
-            steps {
-               branch 'main' git 'https://github.com/rk4027-N/my-java-app.git'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/rk4027-N/my-java-app.git'
+    }
+}
 
         stage('Build') {
             steps {
